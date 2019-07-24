@@ -33,7 +33,7 @@ html, body {
 }
 
 .one {
-  background-image: url("https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  background-image: url("a.jpg");
 }
 
 .two {
@@ -82,6 +82,7 @@ html, body {
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   font-family: "Montserrat";
+  user-select: none;
 }
 
 .title h1 {
@@ -154,7 +155,48 @@ html, body {
   opacity: 1;
 }
 
+.arrows-container {
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+  width: 100px;
+}
 
 .swiper-arrow {
-  display: none;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 100%;
+}
+
+.swiper-arrow span {
+  position: absolute;
+  width: 10px;
+  height: 1px;
+
+
+  top: 14.5px;
+  left: 10px;
+  background: #333;
+}
+
+.swiper-arrow span:nth-of-type(1) {
+  -webkit-transform: translate(0, -3.5px) rotate(45deg);
+  transform: translate(0, -3.5px) rotate(45deg);
+}
+
+.swiper-arrow span:nth-of-type(2) {
+  -webkit-transform: translate(0, 3.5px) rotate(-45deg);
+  transform: translate(0, 3.5px) rotate(-45deg);
+}
+
+.swiper-button-prev {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  left: 0;
+}
+
+.swiper-button-next {
+  right: 0;
 }

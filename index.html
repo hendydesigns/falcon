@@ -33,7 +33,7 @@
 
     <div class="swiper-wrapper">
 
-      <div class="swiper-slide" style="background-image: url(a.jpg)"></div>
+      <div class="swiper-slide" style="background-image: url(a.jpg); -webkit-transform: scaleX(-1); transform: scaleX(-1);"></div>
 
       <div class="swiper-slide" style="background-image: url(b.jpg)"></div>
 
@@ -47,13 +47,15 @@
   </div>
 
   <!-- Add Arrows -->
-  <div class="swiper-arrow swiper-button-next">
-    <span></span>
-    <span></span>
-  </div>
-  <div class="swiper-arrow swiper-button-prev">
-    <span></span>
-    <span></span>
+  <div class="arrows-container">
+    <div class="swiper-arrow swiper-button-prev">
+      <span></span>
+      <span></span>
+    </div>
+    <div class="swiper-arrow swiper-button-next">
+      <span></span>
+      <span></span>
+    </div>
   </div>
 
 </div>
