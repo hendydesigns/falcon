@@ -1,0 +1,160 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.Landing {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.backgrounds {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(50px);
+  filter: blur(50px);
+  background-size: cover;
+  background-position: center center;
+
+  -webkit-transition: all 1s ease;
+  opacity: 0;
+}
+
+.background.active {
+  opacity: 1;
+}
+
+.one {
+  background-image: url("https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+}
+
+.two {
+  background-image: url("b.jpg");
+}
+
+.three {
+  background-image: url("c.jpg");
+}
+
+.featured {
+  position: absolute;
+  width: 80vw;
+  height: 70vh;
+  left: 10vw;
+  top: 15vh;
+
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+
+  opacity: 0;
+}
+
+.featured.active {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  font-family: "Montserrat";
+}
+
+.title h1 {
+  letter-spacing: 5px;
+  color: #fff;
+  font-size: 65px;
+  margin: 0;
+}
+
+.title h1 span {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-transform: translate(0, -20px);
+  transform: translate(0, -20px);
+}
+
+.title.active h1 span {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.title h1 span:nth-of-type(1) {
+  -webkit-transition-delay: .2s;
+  transition-delay: .2s;
+}
+
+.title h1 span:nth-of-type(2) {
+  -webkit-transition-delay: .4s;
+  transition-delay: .4s;
+}
+
+.title h1 span:nth-of-type(3) {
+  -webkit-transition-delay: .6s;
+  transition-delay: .6s;
+}
+
+
+.title h1 span:nth-of-type(4) {
+  -webkit-transition-delay: .8s;
+  transition-delay: .8s;
+}
+
+.title h1 span:nth-of-type(5) {
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s;
+}
+
+
+.title h1 span:nth-of-type(6) {
+  -webkit-transition-delay: 1.2s;
+  transition-delay: 1.2s;
+}
+
+
+.title h3 {
+  letter-spacing: 10px;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  transition-delay: 1s;
+  font-size: 37px;
+  margin: 0;
+}
+
+.title.active h3 {
+  opacity: 1;
+}
+
+
+.swiper-arrow {
+  display: none;
+}
