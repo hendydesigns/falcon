@@ -21,7 +21,7 @@ swiper.on('slideChange', function () {
     $(".background").removeClass("active");
     $(".one").addClass("active");
   }
-  
+
   if(swiper.activeIndex == 1) {
     $(".background").removeClass("active");
     $(".two").addClass("active");
@@ -38,3 +38,9 @@ window.onload = function() {
   $(".one").addClass("active");
   $(".title").addClass("active");
 }
+
+
+$(".button-container").click(function() {
+  $(".button-container").toggleClass("active");
+  $(".menu").toggleClass("active");
+});
