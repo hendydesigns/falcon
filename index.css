@@ -184,6 +184,10 @@ html, body {
   border-radius: 100%;
 }
 
+.swiper-arrow:focus {
+  outline: none;
+}
+
 .swiper-arrow span {
   position: absolute;
   width: 10px;
@@ -238,11 +242,32 @@ html, body {
   display: inline-block;
   margin-left: 25px;
 
-
-  color: #fff;
   font-size: 12px;
 }
 
+
+.desk-nav ul li a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.desk-nav ul li a:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.desk-nav ul li a:hover:after {
+  width: 100%;
+}
 
 .mobile-nav {
   display: none;
@@ -340,7 +365,24 @@ html, body {
   margin-top: 25px;
 }
 
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .menu.active {
   opacity: 1;
   visibility: visible;
+}
+
+
+.menu-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("c.jpg");
+  -webkit-filter: blur(50px);
+  filter: blur(50px);
 }
