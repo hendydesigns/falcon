@@ -1,0 +1,269 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: none;
+}
+
+.backdrop {
+  background-image: url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80");
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.text {
+  color: #000;
+  background: rgba(255, 255, 255, 0.8);
+  mix-blend-mode: screen;
+  text-align: center;
+  width: 300%;
+  height: 100%;
+  margin: 0;
+  line-height: 100vh;
+  position: absolute;
+  left: -100%;
+}
+
+.text span {
+  display: inline-block;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 700;
+  font-size: 17vw;
+
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+
+  -webkit-transform: translate(50px, 0);
+  transform: translate(50px, 0);
+
+  opacity: 0;
+}
+
+.text span:nth-of-type(1) {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.text span:nth-of-type(2) {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.text span:nth-of-type(3) {
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+
+.text span:nth-of-type(4) {
+  -webkit-transition-delay: 0.8s;
+  transition-delay: 0.8s;
+}
+
+.text span:nth-of-type(5) {
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s;
+}
+
+.text span:nth-of-type(6) {
+  -webkit-transition-delay: 1.2s;
+  transition-delay: 1.2s;
+}
+
+.text span:nth-of-type(7) {
+  -webkit-transition-delay: 1.4s;
+  transition-delay: 1.4s;
+}
+
+.text.active span {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+
+  opacity: 1;
+}
+
+.content {
+  margin-top: 150px;
+  text-align: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.info {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  width: 800px;
+  font-family: "Open Sans", Helvetica;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  text-align: left;
+}
+
+.info h1 {
+  font-size: 65px;
+  letter-spacing: 20px;
+}
+
+.info h3 {
+  font-size: 50px;
+  letter-spacing: 10px;
+  color: #ccc;
+  margin-left: 50px;
+}
+
+.background {
+  position: absolute;
+  font-size: 350px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0.3);
+  transform: translate(-50%, -50%) scale(0.3);
+  font-weight: 900;
+  color: #e8e8e8;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+  -webkit-transition-delay: 0.5s;
+  transition-deay: 0.5s;
+}
+
+.info h1 span {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  -webkit-transform: translate(50px, 0);
+  transform: translate(50px, 0);
+}
+
+.info h1 span:nth-of-type(1) {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.info h1 span:nth-of-type(2) {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.info h1 span:nth-of-type(3) {
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+
+.info h1 span:nth-of-type(4) {
+  -webkit-transition-delay: 0.8s;
+  transition-delay: 0.8s;
+}
+
+.info h1 span:nth-of-type(5) {
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s;
+}
+
+.info h1 span:nth-of-type(6) {
+  -webkit-transition-delay: 1.2s;
+  transition-delay: 1.2s;
+}
+
+.info h1 span:nth-of-type(7) {
+  -webkit-transition-delay: 1.4s;
+  transition-delay: 1.4s;
+}
+
+.info h1 span {
+  -webkit-transform: translate(0px, 0);
+  transform: translate(0px, 0);
+  opacity: 1;
+}
+
+.info h3 div {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.info h3 div span {
+  display: inline-block;
+  -webkit-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.info h3 div span {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.info.reveal .background {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0.3;
+}
+
+.mapouter {
+  display: inline-block;
+  position: relative;
+  height: 500px;
+  width: 500px;
+  margin-left: 135px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 500px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+#gmap_canvas {
+  height: 500px;
+  width: 500px;
+}
+
+.bottom {
+  width: 100%;
+  height: 1px;
+  background: #e8e8e8;
+}
+
+@media (max-width: 1200px) {
+  .content {
+    margin-top: 50px;
+    overflow: hidden;
+  }
+  .info {
+    width: 90%;
+  }
+  .info h1 {
+    font-size: 28px;
+    letter-spacing: 5px;
+  }
+  .info h3 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-left: 20px;
+    color: #555;
+  }
+  .mapouter {
+    height: 400px;
+    width: 90%;
+    margin-left: 0%;
+    position: relative;
+  }
+  #gmap_canvas {
+    height: 100%;
+    width: 85vw;
+  }
+}

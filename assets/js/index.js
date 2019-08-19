@@ -34,9 +34,3 @@ window.onload = function() {
   $(".one").addClass("active");
   $(".title").addClass("active");
 }
-
-
-$(".button-container").click(function() {
-  $(".button-container").toggleClass("active");
-  $(".menu").toggleClass("active");
-});
