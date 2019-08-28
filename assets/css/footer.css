@@ -1,0 +1,361 @@
+
+/*Universal Grid Element Behavoir*/
+
+/*-------------------------------------------*/
+
+.Grid {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.Grid-cell {
+  /*Positioning*/
+  position: relative;
+  /*Display and Box Model*/
+  flex: 1;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*-------------------------------------------*/
+
+/*Individual Cell Behavoir for Screen Sizes*/
+
+/*===========================================*/
+
+/*Mobile First Individual Cell Sizing*/
+
+/*-------------------------------------------*/
+
+.Grid--cols-1 > .Grid-cell {
+  flex: 0 0 100%;
+}
+
+.Grid--cols-2 > .Grid-cell {
+  flex: 0 0 100%;
+}
+
+.Grid--cols-3 > .Grid-cell {
+  flex: 0 0 100%;
+}
+
+.Grid--cols-4 > .Grid-cell {
+  flex: 0 0 100%;
+}
+
+.Grid--cols-flex3 > .Grid-cell {
+  flex: 0 0 100%;
+}
+
+.Grid--cols-flex4 > .Grid-cell {
+  flex: 0 0 100%;
+}
+
+.Grid--cols-flex5 > .Grid-cell {
+  flex: 0 0 33.33%;
+}
+
+.Grid--cols-inline > .Grid-cell {
+  flex: 0 0 100%;
+}
+
+.alignCenter > .Grid-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*-------------------------------------------*/
+
+/*800px or More Screens Default Desktop Behavoir*/
+
+/*-------------------------------------------*/
+
+@media (min-width: 800px) {
+  .Grid--cols-1 > .Grid-cell {
+    flex: 0 0 100%;
+  }
+  .Grid--cols-2 > .Grid-cell {
+    flex: 0 0 50%;
+  }
+  .Grid--cols-3 > .Grid-cell {
+    flex: 0 0 33.33%;
+  }
+  .Grid--cols-4 > .Grid-cell {
+    flex: 0 0 25%;
+  }
+  .Grid--cols-5 > .Grid-cell {
+    flex: 0 0 20%;
+  }
+  .Grid--cols-6 > .Grid-cell {
+    flex: 0 0 16.66%;
+  }
+  .Grid--cols-flex3 > .Grid-cell {
+    flex: 0 0 50%;
+  }
+  .Grid--cols-flex4 > .Grid-cell {
+    flex: 0 0 50%;
+  }
+  .Grid--cols-flex5 > .Grid-cell {
+    flex: 0 0 33.3%;
+  }
+  /*Gutters*/
+  .Grid--gutters {
+    margin-left: -4em;
+  }
+  .Grid--gutters .Grid-cell {
+    padding-left: 4em;
+  }
+}
+
+/*-------------------------------------------*/
+
+/*1000px or More Screens 2 per Row*/
+
+/*-------------------------------------------*/
+
+@media (min-width: 1000px) {
+  .Grid--cols-flex3 > .Grid-cell {
+    flex: 0 0 50%;
+  }
+  .Grid--cols-flex4 > .Grid-cell {
+    flex: 0 0 50%;
+  }
+  .Grid--cols-flex5 > .Grid-cell {
+    flex: 0 0 33.33%;
+  }
+}
+
+/*-------------------------------------------*/
+
+/*1200px or More Screens, Flex 3 per Row*/
+
+/*-------------------------------------------*/
+
+@media (min-width: 1200px) {
+  .Grid--cols-flex3 > .Grid-cell {
+    flex: 0 0 33.33%;
+  }
+  .Grid--cols-flex4 > .Grid-cell {
+    flex: 0 0 33.33%;
+  }
+  .Grid--cols-flex5 > .Grid-cell {
+    flex: 0 0 20%;
+  }
+  /*Gutters*/
+  .Grid--gutters {
+    margin-left: -8em;
+  }
+  .Grid--gutters .Grid-cell {
+    padding-left: 8em;
+  }
+}
+
+/*-------------------------------------------*/
+
+/*1400px or More Screens, Flex 4 per Row*/
+
+/*-------------------------------------------*/
+
+@media (min-width: 1400px) {
+  .Grid--cols-flex4 > .Grid-cell {
+    flex: 0 0 25%;
+  }
+  .Grid--cols-flex5 > .Grid-cell {
+    flex: 0 0 20%;
+  }
+}
+
+/*-------------------------------------------*/
+
+/*1600px or More Screens, Flex 5 per Row*/
+
+/*-------------------------------------------*/
+
+@media (min-width: 1600px) {
+  .Grid--cols-flex5 > .Grid-cell {
+    flex: 0 0 20%;
+  }
+  /*Gutters*/
+  .Grid--gutters {
+    margin-left: -12em;
+  }
+  .Grid--gutters .Grid-cell {
+    padding-left: 12em;
+  }
+}
+
+/*-------------------------------------------*/
+
+/*===========================================*/
+
+/*********************************************/
+
+/*Footer Wrappers*/
+
+/*-------------------------------------------*/
+
+.Footer-wrapper {
+  position: relative;
+  /*Display and Box Model*/
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 100%;
+  /*Color*/
+  background: #e8e8e8;
+  color: #000;
+}
+
+.Footer {
+  position: relative;
+  /*Display and Box Model*/
+  width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .Footer {
+    width: 250px;
+  }
+}
+
+@media (max-width: 400px) {
+  .Footer {
+    width: 65%;
+  }
+}
+
+.Footer-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://static.pexels.com/photos/327507/pexels-photo-327507.jpeg);
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.1;
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s;
+  -webkit-transition: all.5s ease;
+  transition: all 0.5s ease;
+}
+
+/*-------------------------------------------*/
+
+/*Footer Content Styles*/
+
+/*-------------------------------------------*/
+
+[class*="Footer-content"] {
+  /*Positioning*/
+  position: relative;
+  padding: 1.5em 0 1.5em 0;
+  /*Display and Box Model*/
+  opacity: 1;
+  /*Text*/
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+  [class*="Footer-content"] {
+    text-align: center;
+  }
+}
+
+/*Text*/
+
+[class*="Footer-content"] h2 {
+  /*Display and Box Model*/
+  margin-top: 0;
+  margin-bottom: 5px;
+  /*Text*/
+  font-family: "Montserrat";
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+[class*="Footer-content"] h3 {
+  /*Display and Box Model*/
+  margin: 0;
+  /*Text*/
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+/*-------------------------------------------*/
+
+/*Footer Responsive Elements*/
+
+/*-------------------------------------------*/
+
+.Footer-mobile-line {
+  /*Positioning*/
+  position: absolute;
+  left: 30%;
+  bottom: 0;
+  transform: translateZ(0);
+  /*Display and Box Model*/
+  width: 40%;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  /*Color*/
+  background: black;
+}
+
+/*Tablet, Laptops, Desktops*/
+
+@media (min-width: 800px) {
+  [class*="Footer-mobile"] {
+    visibility: hidden;
+  }
+  [class*="Footer-content"] {
+    padding: 0 2em 0 2em;
+  }
+  .Footer-content-2 {
+    /*Display and Box Model*/
+    /*border-left: 1px solid black;*/
+    /*Other*/
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+  }
+  .Footer-content-3 {
+    /*Display and Box Model*/
+    /*border-left: 1px solid black;*/
+    /*Other*/
+    -webkit-transition-delay: 1s;
+    transition-delay: 1s;
+  }
+}
+
+/*-------------------------------------------*/
+
+/*===========================================*/
+
+/*********************************************/
+
+
+.Footer ul {
+  padding: 0;
+  margin: 0;
+}
+
+.Footer ul li {
+  list-style-type: none;
+}
+
+.Footer ul li  a {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 3px;
+  list-style-type: none;
+  text-decoration: none;
+  color: #000;
+}
