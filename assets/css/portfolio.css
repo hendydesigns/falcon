@@ -1,0 +1,110 @@
+html, body {
+  margin: 0;
+  background: #333;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100vh;
+    max-width: 1920px;
+    cursor: grab;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.swiper-slide {
+  display: block;
+  width: 500px;
+  height: 450px;
+  -webkit-box-shadow: 0px 12px 23px -9px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 12px 23px -9px rgba(0,0,0,0.3);
+  box-shadow: 0px 12px 23px -9px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+.swiper-slide {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.caption {
+  position: absolute;
+  width: 100%;
+  bottom: -40px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+
+.arrows-container {
+  position: absolute;
+  bottom: 30px;
+  right: 25px;
+  width: 100px;
+}
+
+.swiper-arrow {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: 1px solid #fff;
+}
+
+.swiper-arrow:focus {
+  outline: none;
+}
+
+.swiper-arrow span {
+  position: absolute;
+  width: 10px;
+  height: 1px;
+
+
+  top: 14.5px;
+  left: 10px;
+  background: #fff;
+}
+
+.swiper-arrow span:nth-of-type(1) {
+  -webkit-transform: translate(0, -3.5px) rotate(45deg);
+  transform: translate(0, -3.5px) rotate(45deg);
+}
+
+.swiper-arrow span:nth-of-type(2) {
+  -webkit-transform: translate(0, 3.5px) rotate(-45deg);
+  transform: translate(0, 3.5px) rotate(-45deg);
+}
+
+.swiper-button-prev {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  left: 0;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+@media(max-width: 600px) {
+  .swiper-slide {
+    width: 70%;
+    height: 50vh;
+    margin: 5px;
+  }
+}
