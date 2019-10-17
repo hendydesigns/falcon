@@ -29,7 +29,7 @@ $(".swiper-slide").each(function(index) {
       $(".photo").remove();
 
       //AJAX
-      var folder = "../..//portfolio/project-" + (index+1) + "/";
+      var folder = "../../portfolio/project-" + (index+1) + "/";
 
 
       $(document).ready(function () {
