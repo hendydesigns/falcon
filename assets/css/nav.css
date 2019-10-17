@@ -170,7 +170,7 @@ html, body {
   height: 100%;
   background-size: cover;
   background-position: center center;
-  background-image: url("../img/c.jpg");
+  background-image: url("../../portfolio/portfolio-thumbs/project-1.jpg");
   -webkit-filter: blur(50px);
   filter: blur(50px);
 }

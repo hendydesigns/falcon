@@ -43,15 +43,15 @@ html, body {
 }
 
 .one {
-  background-image: url("../img/1.jpg");
+  background-image: url("../../portfolio/portfolio-thumbs/project-1.jpg");
 }
 
 .two {
-  background-image: url("../img/2.jpg");
+  background-image: url("../../portfolio/portfolio-thumbs/project-2.jpg");
 }
 
 .three {
-  background-image: url("../img/3.jpg");
+  background-image: url("../../portfolio/portfolio-thumbs/project-3.jpg");
 }
 
 .featured {
@@ -274,7 +274,7 @@ html, body {
   font-family: "Montserrat";
   font-weight: 300;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 12px;
   overflow: hidden;
   cursor: pointer;
   color: #fff;
@@ -352,4 +352,8 @@ html, body {
   width: 80%;
   -webkit-transition-delay: .3s;
   transition-delay: .3s;
+}
+
+.port-link {
+  color: #fff !important;
 }
