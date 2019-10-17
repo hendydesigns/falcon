@@ -37,7 +37,7 @@ $(".swiper-slide").each(function(index) {
           url : folder,
           success: function (data) {
               $(data).find("a").attr("href", function (i, val) {
-                  if( val.match(/\.(jpe?g|png|gif)$/) ) {
+                  if( val.match(/\.(jpe?g|png|JPG)$/) ) {
                       $(".photos-container").append( "<img class='photo' src='"+ folder + val +"'>" );
                   }
               });
